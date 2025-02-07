@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /Users/ignatvaschilo/cpp/labs_2sem Select CMakeLists.txt

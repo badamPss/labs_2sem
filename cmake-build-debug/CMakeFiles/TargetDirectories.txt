@@ -1,0 +1,3 @@
+/Users/ignatvaschilo/cpp/labs_2sem/cmake-build-debug/CMakeFiles/labs_2sem.dir
+/Users/ignatvaschilo/cpp/labs_2sem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ignatvaschilo/cpp/labs_2sem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
