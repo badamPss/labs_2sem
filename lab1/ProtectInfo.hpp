@@ -13,7 +13,7 @@ public:
 
     ProtectInfo();
 
-    ProtectInfo(std::string& name, std::string& type);
+    explicit ProtectInfo(std::string& name, std::string& type);
 
     std::string getType() const;
     void print(std::ostream& out) const;

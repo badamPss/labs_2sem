@@ -1,9 +1,14 @@
 #include "ProtectInfo.hpp"
 
-ProtectInfo::ProtectInfo() : name(""), type("") {}
+ProtectInfo::ProtectInfo() {
+    name = "";
+    type = "";
+}
 
-ProtectInfo::ProtectInfo(std::string& name, std::string& type)
-    : name(name), type(type) {}
+ProtectInfo::ProtectInfo(std::string& name, std::string& type) {
+    this->name = name;
+    this->type = type;
+}
 
 std::string ProtectInfo::getType() const {
     return type;
