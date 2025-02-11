@@ -1,8 +1,6 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-#include <iostream>
-
 class Circle {
 protected:
 	double radius;
