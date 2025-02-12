@@ -7,7 +7,6 @@ protected:
 
 public:
 	Circle(double radius);
-	virtual ~Circle() = default;
 
 	virtual double getArea();
 	virtual void print();
