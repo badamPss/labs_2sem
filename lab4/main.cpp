@@ -2,6 +2,7 @@
 #include <fstream>
 #include "Deposit.h"
 #include <vector>
+#include <deque>
 
 int main() {
 	std::setlocale(LC_ALL, "ru_RU.UTF-8");
@@ -14,16 +15,26 @@ int main() {
 	}
 	inputFile.close();
 
+	std::deque<Deposit> deposits_copy(deposits.size());
+	std::copy(deposits.begin(), deposits.end(), deposits_copy.begin());
+
 	std::ofstream outputFile("output.txt");
-	outputFile << "До сортировки:" << std::endl;
+	outputFile << "Оригинальныйй без сортировки:" << std::endl;
 	for (const auto& deposit : deposits) {
 		outputFile << deposit;
 	}
-	outputFile << "\nПосле сортировки:" << std::endl;
+
+	outputFile << "\nСкопированный без сортировки" << std::endl;
+	for (const auto& deposit_copy : deposits_copy) {
+		outputFile << deposit_copy;
+	}
+
+	outputFile << "\nОригинальный после сортировки:" << std::endl;
 	std::sort(deposits.begin(), deposits.end());
 	for (const auto& deposit : deposits) {
 		outputFile << deposit;
 	}
+
 	outputFile.close();
 	return 0;
 }
