@@ -1,0 +1,5 @@
+Deposit1 15000.50 USD 3.5
+Deposit2 20000.00 EUR 2.0
+Deposit3 10000.75 GBP 4.0
+Deposit4 5000.50 USD 1.5
+Deposit5 12000.00 EUR 2.8
