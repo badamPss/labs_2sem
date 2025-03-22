@@ -5,7 +5,6 @@
 int main() {
 	std::string name = "супермегаметод";
 	std::string type = "симметричный";
-    int q = 10;
 
 	auto ptr = Make_MyUnique<ProtectInfo>(name, type);
 
